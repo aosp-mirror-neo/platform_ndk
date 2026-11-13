@@ -436,8 +436,8 @@ Any connected devices that do not match the configurations specified by
 pooled to allow sharding.
 
 Each test will be run on every device that it is compatible with. For example,
-a test that was built for armeabi-v7a with a minSdkVersion of 21 will run on all
-device pools that support that ABI with an OS API level of 21 or newer (unless
+a test that was built for armeabi-v7a with a minSdkVersion of 23 will run on all
+device pools that support that ABI with an OS API level of 23 or newer (unless
 otherwise disabled by `run_unsupported`).
 
 **Read the warnings printed at the top of `run_tests.py` output to figure out
@@ -455,7 +455,7 @@ tested before shipping.
 ```json
 {
   "devices": {
-    "21": [
+    "23": [
       "armeabi-v7a",
       "arm64-v8a"
     ],
@@ -473,8 +473,8 @@ running tests. Each key defines the OS API level that should be tested, and the
 value is a list of ABIs that should be checked for that OS version. In the
 example above, tests will be run on each of the following device configurations:
 
-* API 21 armeabi-v7a
-* API 21 arm64-v8a
+* API 23 armeabi-v7a
+* API 23 arm64-v8a
 * API 32 armeabi-v7a
 * API 32 arm64-v8a
 * API 32 x86_64
